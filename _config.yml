@@ -1,31 +1,50 @@
 title: patrick.pizza
-email: your-email@example.com
-email: "pizza@patricksanders.net"
+email: pizza@patricksanders.net
 author: Patrick Sanders
 description: >-
   The website of Patrick Sanders. 🍕
-url: "https://patrick.pizza"
-twitter_username: patricksanders
-github_username:  patricksanders
-keybase_username: patricksanders
-linkedin_username: psanders7
+url: https://patrick.pizza
+
+social:
+  - name: github
+    url: https://github.com/patricksanders
+    icon: github
+  - name: twitter
+    url: https://twitter.com/patricksanders
+    icon: twitter
+  - name: keybase
+    url: https://keybase.io/patricksanders
+    icon: keybase
+  - name: linkedin
+    url: https://linkedin.com/in/psanders7
+    icon: linkedin-in
+  - name: mastodon
+    url: https://infosec.exchange/@patricksanders
+    icon: mastodon
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 # Build settings
 markdown: kramdown
-theme: minima
 show_excerpts: true
 # remote_theme: poole/hyde
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
