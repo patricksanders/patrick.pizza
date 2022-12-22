@@ -8,17 +8,19 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        display: inline-block;
+        float: none;
+        text-align: center;
     }
 
     li {
-        float: left;
+        float: none;
+        display: inline-block;
+        padding: 16px;
 
         a {
-            font-size: larger;
-            display: block;
+            font-size: x-large;
             text-align: center;
-            padding: 16px;
         }
     }
 }

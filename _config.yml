@@ -21,6 +21,9 @@ social:
   - name: mastodon
     url: https://infosec.exchange/@patricksanders
     icon: mastodon
+  - name: discord
+    url: https://discordapp.com/users/721427829987737655
+    icon: discord
 
 defaults:
   - scope:
